@@ -1,0 +1,112 @@
+/* Aplicando estilos globais a todos os elementos */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui a borda e o preenchimento nas dimensões totais do elemento */
+    color: white; /* Define a cor do texto como branco */
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão como 'Poppins', com uma fonte sans-serif como fallback */
+    transition: all 0.3s ease-in-out; /* Adiciona uma transição suave de 0.3 segundos para todas as mudanças de propriedades */
+}
+
+/* Estilos para o elemento <body> */
+body {
+    background: #121212; /* Define a cor de fundo como um cinza muito escuro */
+    width: 100%; /* Define a largura como 100% da tela */
+    height: 100vh; /* Define a altura como 100% da altura da janela de visualização */
+    display: flex; /* Usa flexbox para o layout do corpo */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: center; /* Alinha os itens no centro horizontalmente */
+}
+
+/* Estilos para o cartão com a classe .cartao */
+.cartao {
+    width: 220px; /* Define a largura do cartão */
+    height: 340px; /* Define a altura do cartão */
+    border-radius: 12px; /* Adiciona bordas arredondadas ao cartão */
+    transform-style: preserve-3d; /* Permite que o cartão tenha transformações 3D */
+    margin: 20px; /* Adiciona uma margem ao redor do cartão */
+    overflow: hidden; /* Esconde o conteúdo que excede os limites do cartão */
+    display: flex; /* Usa flexbox para o layout dentro do cartão */
+    flex-direction: column; /* Organiza os itens do cartão em uma coluna */
+    align-items: center; /* Alinha os itens no centro horizontalmente */
+    justify-content: center; /* Alinha os itens no centro verticalmente */
+    position: relative; /* Permite o posicionamento absoluto de elementos filhos */
+}
+
+/* Estilos específicos para o cartão com a classe .azul */
+.cartao.azul {
+    background: linear-gradient(135deg, #09AFFF, #125575); /* Define um gradiente linear azul como fundo */
+}
+
+/* Estilos específicos para o cartão com a classe .roxo */
+.cartao.roxo {
+    background: linear-gradient(135deg, #5911F2, #290987); /* Define um gradiente linear roxo como fundo */
+}
+
+/* Estilos para o elemento .produto dentro do cartão */
+.cartao .produto {
+    height: 85%; /* Define a altura do produto como 85% da altura do cartão */
+    width: 100%; /* Define a largura do produto como 100% da largura do cartão */
+    padding: 20px; /* Adiciona preenchimento ao redor do conteúdo do produto */
+    display: flex; /* Usa flexbox para o layout do produto */
+    flex-direction: column; /* Organiza os itens do produto em uma coluna */
+    cursor: pointer; /* Altera o cursor para indicar que o produto é clicável */
+    position: relative; /* Permite o posicionamento absoluto de elementos filhos */
+    transform-style: preserve-3d; /* Permite que o produto tenha transformações 3D */
+    align-items: center; /* Alinha os itens no centro horizontalmente */
+    justify-content: center; /* Alinha os itens no centro verticalmente */
+}
+
+/* Estilos para o elemento .numero dentro do produto */
+.produto .numero {
+    font-size: 80px; /* Define o tamanho da fonte como 80px */
+    line-height: 80px; /* Define a altura da linha como 80px */
+    font-style: italic; /* Aplica estilo itálico ao texto */
+    opacity: 0.25; /* Define a opacidade como 25% */
+    position: absolute; /* Permite posicionamento absoluto */
+    top: 10px; /* Define a distância do topo como 10px */
+    left: 10px; /* Define a distância da esquerda como 10px */
+}
+
+/* Estilos para o elemento .tenis dentro do produto */
+.produto .tenis {
+    font-size: 35px; /* Define o tamanho da fonte como 35px */
+    line-height: 35px; /* Define a altura da linha como 35px */
+    font-style: italic; /* Aplica estilo itálico ao texto */
+    opacity: 0.7; /* Define a opacidade como 70% */
+    position: absolute; /* Permite posicionamento absoluto */
+    bottom: 40px; /* Define a distância do fundo como 40px */
+    left: 10px; /* Define a distância da esquerda como 10px */
+}
+
+/* Estilos para o elemento .preco dentro do produto */
+.produto .preco {
+    position: absolute; /* Permite posicionamento absoluto */
+    bottom: 10px; /* Define a distância do fundo como 10px */
+    left: 10px; /* Define a distância da esquerda como 10px */
+}
+
+
+/* Estilos para imagens dentro do produto */
+.produto img {
+    max-width: 100%; /* Garante que a largura da imagem não exceda 100% do elemento pai */
+    max-height: 100%; /* Garante que a altura da imagem não exceda 100% do elemento pai */
+    object-fit: contain; /* Mantém a proporção da imagem e ajusta para caber dentro do elemento pai */
+    position: absolute; /* Permite posicionamento absoluto */
+    top: 50%; /* Define a posição vertical da imagem como 50% do elemento pai */
+    left: 50%; /* Define a posição horizontal da imagem como 50% do elemento pai */
+    transform: translate(-50%, -50%); /* Centraliza a imagem ajustando a posição com base em 50% da largura e altura */
+
+}
+
+/* Estilos para o elemento .titulo */
+.titulo {
+    margin-top: 20px; /* Adiciona uma margem no topo do título */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o elemento <h2> */
+h2 {
+    font-size: 20px; /* Define o tamanho da fonte como 20px */
+    font-weight: 900; /* Define o peso da fonte como 900 (negrito) */
+}

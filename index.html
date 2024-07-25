@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Nike</title> <!-- Corrigi o título para uma forma mais legível -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Certifique-se de que o arquivo CSS está no caminho correto -->
+</head>
+<body>
+    <!-- Primeiro cartão -->
+    <div class="cartao azul">
+        <div class="produto">
+            <span class="numero">01</span>
+            <span class="tenis">TÊNIS</span>
+            <span class="preco">R$39,90</span> <!-- Corrigi o formato do preço para incluir dois dígitos após a vírgula -->
+            <img src="OIP-removebg-preview.png" alt="Nike Azul"> <!-- Adicionei um texto alternativo à imagem para acessibilidade -->
+        </div>
+        <div class="titulo">
+            <h2>Nike Azul</h2>
+        </div>
+    </div>
+
+    <!-- Segundo cartão -->
+    <div class="cartao roxo">
+        <div class="produto">
+            <span class="numero">02</span>
+            <span class="tenis">TÊNIS</span>
+            <span class="preco">R$49,90</span> <!-- Corrigi o formato do preço -->
+            <img src="R-removebg-preview.png" alt="Nike Roxo"> <!-- Adicionei um texto alternativo à imagem para acessibilidade -->
+        </div>
+        <div class="titulo">
+            <h2>Nike Roxo</h2>
+        </div>
+    </div>
+
+    <!-- Inclusão da biblioteca VanillaTilt via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@latest/dist/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        // Inicialização do VanillaTilt
+        VanillaTilt.init(document.querySelectorAll(".cartao"), {
+            max: 25,              // Ângulo máximo de inclinação em graus
+            speed: 500,           // Velocidade da animação de inclinação em milissegundos
+            glare: true,          // Ativa o efeito de brilho
+            "max-glare": 0.5,    // Intensidade máxima do efeito de brilho
+        });
+    </script>
+</body>
+</html>
